@@ -22,8 +22,11 @@ public class HealthSystem : MonoBehaviour
     {
         if(currentPlayerHealth <= 0)
         {
+            GameObject.Destroy(gameObject);
+            /*
             int currentScene = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentScene);
+            */
         }
     }
 }
