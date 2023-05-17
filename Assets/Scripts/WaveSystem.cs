@@ -10,12 +10,24 @@ public class WaveSystem : MonoBehaviour
     public GameObject enemyPrefab;
 
     private Vector3 respawnPointPos;
+    private int timerValue;
+    
     private void Start()
     {
         respawnPointPos = respawnPoint.position;
-        for(int i = 0; i < firstWave; i++)
+    }
+
+    private void Update()
+    {
+        timerValue = Mathf.FloorToInt(Timer.timeValueStatic);
+        Debug.Log(timerValue);
+        if (timerValue == 115)
         {
             Instantiate(enemyPrefab,respawnPointPos, Quaternion.identity);
+        }
+        else
+        {
+            return;
         }
     }
 }
