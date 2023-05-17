@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7d65c54a-68b4-4621-9b20-651d2ac9a556" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Graveyard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Graveyard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Kuba_Sandbox_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Kuba_Sandbox_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Prefabs/WaveSystem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Prefabs/WaveSystem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WaveSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682696306046</updated>
       <workItem from="1682696309601" duration="6000" />
-      <workItem from="1684339209683" duration="901000" />
+      <workItem from="1684339209683" duration="2285000" />
     </task>
     <servers />
   </component>
