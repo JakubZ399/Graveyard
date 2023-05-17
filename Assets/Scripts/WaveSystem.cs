@@ -5,12 +5,25 @@ using UnityEngine;
 
 public class WaveSystem : MonoBehaviour
 {
+    [Header("How many enemy to spawn?")]
     public int firstWave = 5;
+    public int secondWave = 10;
+    public int thirdWave = 15;
+    
+    [Header("Things to choose")]
+    
+    //respawn points to choose
     public Transform respawnPoint;
+    
+    //enemy prefab to choose
     public GameObject enemyPrefab;
 
-    private Vector3 respawnPointPos;
+    public Vector3 respawnPointPos;
     private int timerValue;
+
+    private bool isFristWave;
+    private bool isSecondWave;
+    private bool isThirdWave;
     
     private void Start()
     {
@@ -20,14 +33,28 @@ public class WaveSystem : MonoBehaviour
     private void Update()
     {
         timerValue = Mathf.FloorToInt(Timer.timeValueStatic);
-        Debug.Log(timerValue);
-        if (timerValue == 115)
+        if (timerValue == 110 && !isFristWave)
+        {
+            SpawnEnemy(firstWave);
+            isFristWave = true;
+        }
+        else if (timerValue == 60 && !isSecondWave)
+        {
+            SpawnEnemy(secondWave);
+            isSecondWave = true;
+        }
+        else if (timerValue == 30 && !isThirdWave)
+        {
+            SpawnEnemy(thirdWave);
+            isThirdWave = true;
+        }
+    }
+
+    void SpawnEnemy(int enemyQuantity)
+    {
+        for (int i = 0; i < enemyQuantity; i++)
         {
             Instantiate(enemyPrefab,respawnPointPos, Quaternion.identity);
-        }
-        else
-        {
-            return;
         }
     }
 }
