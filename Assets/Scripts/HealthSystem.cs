@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,28 +6,42 @@ using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
-    [SerializeField] private float startPlayerHealth = 100f;
-    public float currentPlayerHealth;
+    public static int currentPlayerHealthStatic;
+    private bool isAlive;
 
     private void Start()
     {
-        startPlayerHealth = currentPlayerHealth;
+        currentPlayerHealthStatic = 100;
+        isAlive = true;
     }
 
     private void Update()
     {
+        SetMaxPlayerHealth();
+        Debug.Log(currentPlayerHealthStatic);
         RestartLevel();
     }
 
     private void RestartLevel()
     {
-        if(currentPlayerHealth <= 0)
+        if(currentPlayerHealthStatic <= 0 && isAlive)
         {
-            GameObject.Destroy(gameObject);
-            /*
-            int currentScene = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentScene);
-            */
+            isAlive = false;
+            Destroy(gameObject);
+            Invoke("ReloadLevelAfterTime", 1f);
+        }
+    }
+
+    private void ReloadLevelAfterTime()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void SetMaxPlayerHealth()
+    {
+        if (currentPlayerHealthStatic > 100)
+        {
+            currentPlayerHealthStatic = 100;
         }
     }
 }
