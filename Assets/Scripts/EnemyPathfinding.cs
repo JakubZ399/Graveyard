@@ -5,9 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyPathfinding : MonoBehaviour
 {
-    [SerializeField] private GameObject playerObj;
+    public static GameObject playerObj;
     [SerializeField] private NavMeshAgent navMeshAgent;
-
     [SerializeField] private Vector3 playerPos;
 
     private void Awake()
