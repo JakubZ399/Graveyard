@@ -7,6 +7,11 @@
     <list default="true" id="7d65c54a-68b4-4621-9b20-651d2ac9a556" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Graveyard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Graveyard/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Kuba_Sandbox_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Kuba_Sandbox_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Kuba_Sandbox_Scene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Kuba_Sandbox_Scene/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Kuba_Sandbox_Scene/NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Kuba_Sandbox_Scene/NavMesh.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Prefabs/EnemyZombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Prefabs/EnemyZombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyPathfinding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyPathfinding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WaveSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Timer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -103,6 +109,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
