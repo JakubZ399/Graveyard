@@ -1059,7 +1059,7 @@ PrefabInstance:
     - target: {fileID: 8011576311229930085, guid: 27672001b78302a4fb3d7c7565b3cf64,
         type: 3}
       propertyPath: firstWave
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8011576311229930085, guid: 27672001b78302a4fb3d7c7565b3cf64,
         type: 3}
@@ -1092,6 +1092,11 @@ PrefabInstance:
       propertyPath: respawnPoint.Array.data[2]
       value: 
       objectReference: {fileID: 1437625500}
+    - target: {fileID: 8011576311229930085, guid: 27672001b78302a4fb3d7c7565b3cf64,
+        type: 3}
+      propertyPath: respawnPointPos.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27672001b78302a4fb3d7c7565b3cf64, type: 3}
 --- !u!1001 &7785140130841704015

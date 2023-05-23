@@ -10,6 +10,11 @@ public class WaveSystem : MonoBehaviour
     public int firstWave = 5;
     public int secondWave = 10;
     public int thirdWave = 15;
+
+    [Header("Time to respawn waves")]
+    public int firstWaveTimer = 110;
+    public int secondWaveTimer = 80;
+    public int thirdWaveTimer = 40;
     
     [Header("Things to choose")]
     
@@ -19,10 +24,9 @@ public class WaveSystem : MonoBehaviour
     //enemy prefab to choose
     public GameObject enemyPrefab;
     
-    //Vector 3
-    public Vector3 respawnPointPos;
+    public Vector3[] respawnPointPos;
     
-    //private
+    
     private int timerValue;
 
     private bool isFristWave;
@@ -31,7 +35,11 @@ public class WaveSystem : MonoBehaviour
     
     private void Start()
     {
-        respawnPointPos = respawnPoint[Random.Range(0, respawnPoint.Length-1)].position;
+        for (int i = 0; i <= respawnPoint.Length - 1; i++)
+        {
+            respawnPointPos[i] = respawnPoint[i].position;
+        }
+
     }
 
     private void Update()
@@ -41,9 +49,12 @@ public class WaveSystem : MonoBehaviour
 
     void SpawnEnemy(int enemyQuantity)
     {
-        for (int i = 0; i < enemyQuantity; i++)
+        for (int i = 0; i <= respawnPoint.Length - 1; i++)
         {
-            Instantiate(enemyPrefab,respawnPointPos, Quaternion.identity);
+            for (int x = 0; x < enemyQuantity; x++)
+            {
+                Instantiate(enemyPrefab,respawnPointPos[i], Quaternion.identity);
+            }
         }
     }
 
@@ -52,19 +63,19 @@ public class WaveSystem : MonoBehaviour
         timerValue = Mathf.FloorToInt(Timer.timeValueStatic);
         
         //110
-        if (timerValue == 117 && !isFristWave)
+        if (timerValue == firstWaveTimer && !isFristWave)
         {
             SpawnEnemy(firstWave);
             isFristWave = true;
         }
         //60
-        else if (timerValue == 60 && !isSecondWave)
+        else if (timerValue == secondWaveTimer && !isSecondWave)
         {
             SpawnEnemy(secondWave);
             isSecondWave = true;
         }
         //30
-        else if (timerValue == 30 && !isThirdWave)
+        else if (timerValue == thirdWaveTimer && !isThirdWave)
         {
             SpawnEnemy(thirdWave);
             isThirdWave = true;
