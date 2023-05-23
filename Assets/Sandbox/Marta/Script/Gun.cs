@@ -10,7 +10,7 @@ public class Gun : MonoBehaviour
 
 	void Update()
 	{
-		if(Input.GetMouseButton(1))
+		if(Input.GetMouseButton(0))
 		{
 			Debug.Log("Left Mouse Button Pressed");
 			var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
