@@ -9,11 +9,11 @@ public class EnemyAttack : MonoBehaviour
     public float enemyAttackRange = 1f;
     public float enemyAttackSpeed = 2f;
     
-    public bool corutineStarted;
+    public bool coroutineStarted;
     private void Update()
     {
         float distance = Vector3.Distance(gameObject.transform.position, EnemyPathfinding.playerObj.transform.position);
-        if (distance < enemyAttackRange && corutineStarted == false)
+        if (distance < enemyAttackRange && coroutineStarted == false)
         {
             StartCoroutine(AttackOverTime());
         }
@@ -21,7 +21,7 @@ public class EnemyAttack : MonoBehaviour
 
     private IEnumerator AttackOverTime()
     {
-        corutineStarted = true;
+        coroutineStarted = true;
         while (true)
         {
             yield return new WaitForSeconds(enemyAttackSpeed);
