@@ -10,7 +10,8 @@ public class GunShoot : MonoBehaviour
     public GameObject impactEffect;
 
     public int damage = 10;
-
+    public float rateOfFire = 2;
+    public float currentFireCooldown;
     void Start()
     {
         
@@ -20,10 +21,11 @@ public class GunShoot : MonoBehaviour
     void Update()
     {
        ray = Camera.main.ViewportPointToRay(new Vector3(.5f, .5f, 0));
-       if(Input.GetMouseButtonDown(0))
+       if(Input.GetMouseButton(0) && currentFireCooldown == 0)
        {
            if(Physics.Raycast(ray, out hit, Mathf.Infinity))
            {
+                currentFireCooldown = rateOfFire;
                GameObject impactEffectGO = Instantiate(impactEffect, hit.point, Quaternion.identity) as GameObject;
                Destroy(impactEffectGO, 5);
                if(hit.collider.gameObject.tag == "Cube")
@@ -31,7 +33,16 @@ public class GunShoot : MonoBehaviour
                    Cube cube = hit.collider.gameObject.GetComponent<Cube>();
                    cube.TakeDamage(damage);
                }
+               
            }
-       }
+        }
+        else
+        {
+            currentFireCooldown -=  Time.deltaTime;
+            if(currentFireCooldown <= 0)
+            {
+                currentFireCooldown = 0;
+            }
+        }
     }
 }
