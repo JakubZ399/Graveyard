@@ -17,6 +17,7 @@ public class EnemyPathfinding : MonoBehaviour
     private void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent.speed = Random.Range(2.4f, 3.5f);
     }
 
     private void Update()

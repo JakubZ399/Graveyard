@@ -51,7 +51,7 @@ public class WaveSystem : MonoBehaviour
     {
         for (int i = 0; i <= respawnPoint.Length - 1; i++)
         {
-            for (int x = 0; x < enemyQuantity; x++)
+            for (int x = Random.Range(1, enemyQuantity-1); x < enemyQuantity; x++)
             {
                 Instantiate(enemyPrefab,respawnPointPos[i], Quaternion.identity);
             }

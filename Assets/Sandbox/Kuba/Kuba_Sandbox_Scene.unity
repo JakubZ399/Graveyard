@@ -658,7 +658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437625499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.89, y: 0, z: -0.2}
+  m_LocalPosition: {x: -14.82, y: 0, z: -0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -996,6 +996,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 2.92
       objectReference: {fileID: 0}
+    - target: {fileID: 621079696, guid: 27672001b78302a4fb3d7c7565b3cf64, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.41
+      objectReference: {fileID: 0}
     - target: {fileID: 7332626073893886880, guid: 27672001b78302a4fb3d7c7565b3cf64,
         type: 3}
       propertyPath: m_Name
@@ -1072,6 +1076,11 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 621079696}
+    - target: {fileID: 8011576311229930085, guid: 27672001b78302a4fb3d7c7565b3cf64,
+        type: 3}
+      propertyPath: firstWaveTimer
+      value: 119
+      objectReference: {fileID: 0}
     - target: {fileID: 8011576311229930085, guid: 27672001b78302a4fb3d7c7565b3cf64,
         type: 3}
       propertyPath: respawnPoint.Array.size
