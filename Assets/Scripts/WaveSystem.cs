@@ -51,10 +51,12 @@ public class WaveSystem : MonoBehaviour
     {
         for (int i = 0; i <= respawnPoint.Length - 1; i++)
         {
-            for (int x = Random.Range(1, enemyQuantity-1); x < enemyQuantity; x++)
+            /*for (int x = Random.Range(1, enemyQuantity-1); x < enemyQuantity; x++)
             {
                 Instantiate(enemyPrefab,respawnPointPos[i], Quaternion.identity);
-            }
+            }*/
+
+            StartCoroutine(DelayEnemySpawn(i, enemyQuantity));
         }
     }
 
@@ -79,6 +81,16 @@ public class WaveSystem : MonoBehaviour
         {
             SpawnEnemy(thirdWave);
             isThirdWave = true;
+        }
+    }
+
+    private IEnumerator DelayEnemySpawn(int i, int enemyQuantity)
+    {
+        
+        for (int x = Random.Range(1, enemyQuantity-1); x < enemyQuantity; x++)
+        {
+            Instantiate(enemyPrefab,respawnPointPos[i], Quaternion.identity);
+            yield return new WaitForSeconds(1f);
         }
     }
 }
