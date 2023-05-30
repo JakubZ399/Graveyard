@@ -27,6 +27,15 @@ public class EnemyAttack : MonoBehaviour
             animator.SetBool("isAttacking", true);
             StartCoroutine(AttackOverTime());
         }
+        else
+        {
+            return;
+        }
+
+        if (distance < enemyAttackRange)
+        {
+            Debug.DrawRay(transform.position, Vector3.forward, Color.red, 1000f);
+        }
     }
 
     private IEnumerator AttackOverTime()
@@ -34,9 +43,13 @@ public class EnemyAttack : MonoBehaviour
         coroutineStarted = true;
         while (true)
         {
+            Debug.Log(coroutineStarted);
             yield return new WaitForSeconds(enemyAttackSpeed);
             animator.SetBool("isAttacking", false);
             HealthSystem.currentPlayerHealthStatic -= enemyDamage;
+            coroutineStarted = false;
+            Debug.Log(coroutineStarted);
+            yield break;
         }
     }
 }

@@ -14,11 +14,12 @@ GameObject:
   - component: {fileID: 623565615874504246}
   - component: {fileID: 8748506783017955400}
   - component: {fileID: 7477165023748506224}
+  - component: {fileID: 671424416325145074}
   - component: {fileID: 3582949059180082436}
   - component: {fileID: 1976920798419436863}
   m_Layer: 0
   m_Name: EnemyZombie
-  m_TagString: Untagged
+  m_TagString: Cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,6 +134,19 @@ MonoBehaviour:
   enemyAttackRange: 1
   enemyAttackSpeed: 1
   coroutineStarted: 0
+--- !u!114 &671424416325145074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623565615874504244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb2b5c849e1790a4ea5d0fa43caea1fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!195 &3582949059180082436
 NavMeshAgent:
   m_ObjectHideFlags: 0

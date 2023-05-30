@@ -12,11 +12,11 @@ public class GunShoot : MonoBehaviour
     public int damage = 10;
     public float rateOfFire = 2;
     public float currentFireCooldown;
+    
     void Start()
     {
         
     }
-
 
     void Update()
     {
@@ -25,7 +25,7 @@ public class GunShoot : MonoBehaviour
        {
            if(Physics.Raycast(ray, out hit, Mathf.Infinity))
            {
-                currentFireCooldown = rateOfFire;
+               currentFireCooldown = rateOfFire;
                GameObject impactEffectGO = Instantiate(impactEffect, hit.point, Quaternion.identity) as GameObject;
                Destroy(impactEffectGO, 5);
                if(hit.collider.gameObject.tag == "Cube")
