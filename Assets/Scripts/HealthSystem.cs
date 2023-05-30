@@ -7,33 +7,30 @@ using UnityEngine.SceneManagement;
 public class HealthSystem : MonoBehaviour
 {
     public static int currentPlayerHealthStatic;
-    private bool isAlive;
 
     private void Start()
     {
         currentPlayerHealthStatic = 100;
-        isAlive = true;
     }
 
     private void Update()
     {
-        SetMaxPlayerHealth();
         Debug.Log(currentPlayerHealthStatic);
-        RestartLevel();
+        SetMaxPlayerHealth();
+        RestartLevelAfterDead();
     }
 
-    private void RestartLevel()
+    private void RestartLevelAfterDead()
     {
-        if(currentPlayerHealthStatic <= 0 && isAlive)
+        if(currentPlayerHealthStatic <= 0)
         {
-            isAlive = false;
-            Destroy(gameObject);
-            Invoke("ReloadLevelAfterTime", 1f);
+            StartCoroutine(ReloadLevelAfterTime());
         }
     }
 
-    private void ReloadLevelAfterTime()
+    private IEnumerator ReloadLevelAfterTime()
     {
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
