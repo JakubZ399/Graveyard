@@ -5,9 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyPathfinding : MonoBehaviour
 {
-    [SerializeField] private GameObject playerObj;
+    public static GameObject playerObj;
     [SerializeField] private NavMeshAgent navMeshAgent;
-
     [SerializeField] private Vector3 playerPos;
 
     private void Awake()
@@ -18,6 +17,7 @@ public class EnemyPathfinding : MonoBehaviour
     private void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent.speed = Random.Range(2.4f, 3.5f);
     }
 
     private void Update()
