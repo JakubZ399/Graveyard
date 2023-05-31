@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d61bc7fe-4868-4d5d-90a8-988086984556}">
+		<property name="assetPath">
+			<value>193759__nanity05__zombie.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.7647165532879818</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1c707c3b-e556-4947-803f-b71a79cc74e2}</destination>
+		</relationship>
+	</object>
+</objects>
