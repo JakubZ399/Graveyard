@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 671424416325145074}
   - component: {fileID: 3582949059180082436}
   - component: {fileID: 1976920798419436863}
+  - component: {fileID: 8723489482815764371}
   m_Layer: 0
   m_Name: EnemyZombie
   m_TagString: Cube
@@ -189,6 +190,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8723489482815764371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623565615874504244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 122683866
+      Data2: 1079423299
+      Data3: 1184537226
+      Data4: 889634887
+    Path: event:/Zombie Audio
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &6188669132929004467
 PrefabInstance:
   m_ObjectHideFlags: 0
