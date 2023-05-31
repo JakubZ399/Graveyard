@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7d65c54a-68b4-4621-9b20-651d2ac9a556" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Graveyard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Graveyard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DelthorGames/AKM/Materials/AKM_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DelthorGames/AKM/Materials/AKM_Mat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Marta/Script/GunShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Marta/Script/GunShoot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Sandbox/Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Sandbox/Capsule.prefab" afterDir="false" />
     </list>
