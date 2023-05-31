@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class ContinueButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void ResumeButtonClicked()
     {
-        
+            FindObjectOfType<PauseGame>().ResumeGame(); // Find the PauseGame script and call ResumeGame method
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
