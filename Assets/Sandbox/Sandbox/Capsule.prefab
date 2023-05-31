@@ -469,8 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e4c4265b8d49141a00ba9e6cc2ef9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactEffect: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7,
-    type: 3}
+  impactEffect: {fileID: 100002, guid: 3b1513bcb86426b4795879be6a128ed7, type: 3}
   damage: 10
   rateOfFire: 0.05
   currentFireCooldown: 0
