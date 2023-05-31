@@ -18,12 +18,14 @@ public class GunShoot : MonoBehaviour
     public float recoilStrength = 1f;
     
     public Camera _playerCamera;
+    public static Camera _playerCameraStatic;
 
     public GameObject _buzzEffect;
 
-    private void Start()
+    private void Awake()
     {
         _buzzEffect.SetActive(false);
+        _playerCameraStatic = _playerCamera;
     }
 
     void Update()

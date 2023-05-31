@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Cube : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Cube : MonoBehaviour
     public int health = 50;
 
     private Animator _animator;
+
+    public GameObject medicine;
 
     private void Start()
     {
@@ -34,12 +37,9 @@ public class Cube : MonoBehaviour
         _enemyPathfinding.enabled = false;
 
         _animator.SetBool("isDeath", true);
-        StartCoroutine(GameObjectOff());
+        Destroy(gameObject, 15f);
+
+        gameObject.GetComponent<CapsuleCollider>().enabled = false;
     }
 
-    private IEnumerator GameObjectOff()
-    {
-        yield return new WaitForSeconds(10f);
-        Destroy(gameObject);
-    }
 }

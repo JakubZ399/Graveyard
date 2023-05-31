@@ -135,6 +135,7 @@ MonoBehaviour:
   enemyAttackRange: 1
   enemyAttackSpeed: 1
   coroutineStarted: 0
+  _playerCamera: {fileID: 0}
 --- !u!114 &671424416325145074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  medicine: {fileID: 3505810132149001834, guid: 6b5ad05bf7cc7b64f9c25f8e4765d0f4,
+    type: 3}
 --- !u!195 &3582949059180082436
 NavMeshAgent:
   m_ObjectHideFlags: 0

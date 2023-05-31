@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
@@ -43,12 +44,11 @@ public class EnemyAttack : MonoBehaviour
         coroutineStarted = true;
         while (true)
         {
-            Debug.Log(coroutineStarted);
             yield return new WaitForSeconds(enemyAttackSpeed);
             animator.SetBool("isAttacking", false);
+            GunShoot._playerCameraStatic.DOShakeRotation(0.2f, 10f, 1, 90f);
             HealthSystem.currentPlayerHealthStatic -= enemyDamage;
             coroutineStarted = false;
-            Debug.Log(coroutineStarted);
             yield break;
         }
     }
