@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class GunShoot : MonoBehaviour
@@ -12,6 +13,8 @@ public class GunShoot : MonoBehaviour
     public int damage = 10;
     public float rateOfFire = 2;
     public float currentFireCooldown;
+
+    public Camera _playerCamera;
     
     void Start()
     {
@@ -23,6 +26,7 @@ public class GunShoot : MonoBehaviour
        ray = Camera.main.ViewportPointToRay(new Vector3(.5f, .5f, 0));
        if(Input.GetMouseButton(0) && currentFireCooldown == 0)
        {
+           _playerCamera.DOShakeRotation(0.1f, 2, 1, 90f);
            if(Physics.Raycast(ray, out hit, Mathf.Infinity))
            {
                currentFireCooldown = rateOfFire;
