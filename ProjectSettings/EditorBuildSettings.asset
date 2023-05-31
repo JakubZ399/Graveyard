@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Sandbox/Michalina/Options.unity
     guid: 0aff0022081a06447a384d7cea6fb8d4
+  - enabled: 1
+    path: Assets/Sandbox/Sandbox/MainMap.unity
+    guid: 2e444744dd86c4745a365174d3b0ae99
+  - enabled: 1
+    path: Assets/Sandbox/Sandbox/SandboxMap.unity
+    guid: 88c8c56db89ed9744be9f533c8265012
   m_configObjects: {}

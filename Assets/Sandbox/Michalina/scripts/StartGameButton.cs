@@ -7,6 +7,6 @@ public class StartGameButton : MonoBehaviour
 {
     public void LoadScene()
     {
-        SceneManager.LoadScene("Kuba_Sandbox_Scene");
+        SceneManager.LoadScene("SandboxMap");
     }
 }
