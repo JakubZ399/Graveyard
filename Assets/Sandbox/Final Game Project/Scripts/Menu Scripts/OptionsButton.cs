@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartGameButton : MonoBehaviour
+public class OptionsButton : MonoBehaviour
 {
     public void LoadScene()
     {
-        SceneManager.LoadScene("SandboxMap");
+        SceneManager.LoadScene("Options");
     }
 }
