@@ -7,6 +7,6 @@ public class StartGameButton : MonoBehaviour
 {
     public void LoadScene()
     {
-        SceneManager.LoadScene("MainMap");
+        SceneManager.LoadScene("SandboxMap");
     }
 }
