@@ -371,32 +371,32 @@ PrefabInstance:
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.45
+      value: 0.374
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.279
+      value: -0.244
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.007
+      value: 0.189
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755,
         type: 3}
@@ -469,10 +469,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e4c4265b8d49141a00ba9e6cc2ef9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactEffect: {fileID: 0}
+  impactEffect: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7,
+    type: 3}
   damage: 10
-  rateOfFire: 2
+  rateOfFire: 0.05
   currentFireCooldown: 0
+  _playerCamera: {fileID: 7201033053679304943}
 --- !u!1001 &7201033052283536007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -676,6 +678,7 @@ MonoBehaviour:
   damage: 10
   rateOfFire: 0.02
   currentFireCooldown: 0
+  _playerCamera: {fileID: 0}
 --- !u!1001 &7201033053613704769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -799,6 +802,7 @@ MonoBehaviour:
   damage: 10
   rateOfFire: 0.05
   currentFireCooldown: 0
+  _playerCamera: {fileID: 0}
 --- !u!1001 &7201033053771377765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -922,3 +926,4 @@ MonoBehaviour:
   damage: 10
   rateOfFire: 0.01
   currentFireCooldown: 0
+  _playerCamera: {fileID: 0}
