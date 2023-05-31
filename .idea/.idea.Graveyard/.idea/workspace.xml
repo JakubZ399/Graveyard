@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7d65c54a-68b4-4621-9b20-651d2ac9a556" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Graveyard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Graveyard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Prefabs/EnemyZombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Prefabs/EnemyZombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Zombie Model &amp; Animations/Ch10_nonPBR.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Zombie Model &amp; Animations/Ch10_nonPBR.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Zombie Model &amp; Animations/Zombie Animations.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Kuba/Zombie Model &amp; Animations/Zombie Animations.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Marta/Script/Cube.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Marta/Script/Cube.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Marta/Script/GunShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Marta/Script/GunShoot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sandbox/Sandbox/Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandbox/Sandbox/Capsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Timer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.7/Editor/MaterialUpgrader.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
