@@ -9,6 +9,7 @@ public class Cube : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        Debug.Log("health: " + health);
         if(health <= 0)
         {
             Destroy(gameObject);
