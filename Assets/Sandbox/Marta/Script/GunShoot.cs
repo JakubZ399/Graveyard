@@ -30,6 +30,7 @@ public class GunShoot : MonoBehaviour
 
     public GameObject _buzzEffect;
 
+    //bool
     private bool isReloading;
 
     private void Awake()
@@ -94,7 +95,6 @@ public class GunShoot : MonoBehaviour
             isReloading = true;
             _currentAmmo = _maxAmmo;
             _maxCarryingAmmo -= _maxAmmo;
-            gameObject.transform.DORotate(new Vector3(0, -20, 20), _reloadingTime/2, RotateMode.LocalAxisAdd).SetLoops(2, LoopType.Yoyo);
             StartCoroutine(ReloadingCooldown());
         }
     }

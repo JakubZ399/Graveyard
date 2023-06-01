@@ -47,7 +47,7 @@ public class BarricadeScript : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E) && !isBuild)
+        if (Input.GetKeyDown(KeyCode.E) && !isBuild && other.gameObject.tag == "Player")
         {
             _barricadeCurrentHP = _barricadeMaxHP;
             _barricade.SetActive(true);
@@ -71,7 +71,7 @@ public class BarricadeScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!isBuild)
+        if (!isBuild && other.gameObject.tag == "Player")
         {
             _barricadeMessage.SetActive(true);
         }

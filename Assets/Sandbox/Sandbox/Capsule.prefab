@@ -41,9 +41,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7201033053679304942}
   - component: {fileID: 7201033053679304943}
-  - component: {fileID: 7201033053679304940}
   - component: {fileID: 7201033053679304929}
   - component: {fileID: 7411510157632600808}
+  - component: {fileID: 2064540773}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -115,14 +115,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &7201033053679304940
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7201033053679304941}
-  m_Enabled: 1
 --- !u!114 &7201033053679304929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +149,19 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
 --- !u!114 &7411510157632600808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201033053679304941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+--- !u!114 &2064540773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,6 +220,7 @@ GameObject:
   - component: {fileID: 7201033054269058806}
   - component: {fileID: 8764879843142322653}
   - component: {fileID: 7201033054269058807}
+  - component: {fileID: 236708265}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -357,6 +363,26 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 9
   jumpHeight: 6
+--- !u!114 &236708265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201033054269058804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652edc155cf02c147adbe7f86b465b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputsound:
+    Guid:
+      Data1: 1179894237
+      Data2: 1236315545
+      Data3: -438921077
+      Data4: 530377412
+    Path: event:/Footsteps
+  walkingspeed: 0.5
 --- !u!1001 &4004923915677060210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -637,6 +663,9 @@ MonoBehaviour:
   damage: 10
   rateOfFire: 0.1
   currentFireCooldown: 0
+  _maxCarryingAmmo: 150
+  _maxAmmo: 30
+  _reloadingTime: 3
   recoilStrength: 1
   _playerCamera: {fileID: 7201033053679304943}
   _buzzEffect: {fileID: 4004923915676961492}
@@ -842,6 +871,9 @@ MonoBehaviour:
   damage: 10
   rateOfFire: 0.05
   currentFireCooldown: 0
+  _maxCarryingAmmo: 150
+  _maxAmmo: 30
+  _reloadingTime: 3
   recoilStrength: 1
   _playerCamera: {fileID: 7201033053679304943}
   _buzzEffect: {fileID: 0}
@@ -967,6 +999,9 @@ MonoBehaviour:
   damage: 10
   rateOfFire: 0.05
   currentFireCooldown: 0
+  _maxCarryingAmmo: 150
+  _maxAmmo: 30
+  _reloadingTime: 3
   recoilStrength: 1
   _playerCamera: {fileID: 7201033053679304943}
   _buzzEffect: {fileID: 0}
@@ -1092,6 +1127,9 @@ MonoBehaviour:
   damage: 10
   rateOfFire: 0.05
   currentFireCooldown: 0
+  _maxCarryingAmmo: 150
+  _maxAmmo: 30
+  _reloadingTime: 3
   recoilStrength: 1
   _playerCamera: {fileID: 7201033053679304943}
   _buzzEffect: {fileID: 0}

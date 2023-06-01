@@ -390,32 +390,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171283478}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &236708257 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7201033054269058804, guid: 8abc0b9a11f419b409ce56c9ba433eeb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1086452818}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &236708265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236708257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 652edc155cf02c147adbe7f86b465b9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputsound:
-    Guid:
-      Data1: 1179894237
-      Data2: 1236315545
-      Data3: -438921077
-      Data4: 530377412
-    Path: event:/Footsteps
-  walkingspeed: 0.5
 --- !u!1 &263386754
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,13 +970,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7201033054269058804, guid: 8abc0b9a11f419b409ce56c9ba433eeb,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7201033053679304940, guid: 8abc0b9a11f419b409ce56c9ba433eeb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8abc0b9a11f419b409ce56c9ba433eeb, type: 3}
 --- !u!1 &1153187615
 GameObject:
@@ -1674,25 +1642,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bab19842fc2b8e44837b5c42192679d, type: 3}
---- !u!1 &2064540768 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7201033053679304941, guid: 8abc0b9a11f419b409ce56c9ba433eeb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1086452818}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2064540773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064540768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
 --- !u!1 &2093854954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,7 +2147,7 @@ PrefabInstance:
     - target: {fileID: 7332626073893886880, guid: 27672001b78302a4fb3d7c7565b3cf64,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7332626073893886887, guid: 27672001b78302a4fb3d7c7565b3cf64,
         type: 3}
