@@ -5,11 +5,10 @@ using UnityEngine;
 public class PauseGame : MonoBehaviour
 {
     private bool isPaused = false;
-    private GameObject pauseMenu;
+    public GameObject pauseMenu;
 
     public void Start()
     {
-        pauseMenu = GameObject.Find("Pause_Menu"); // Find the Pause_Menu GameObject in the scene
         pauseMenu.SetActive(false); // Hide the pause menu initially
     }
     public void Update()
