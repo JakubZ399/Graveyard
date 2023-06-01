@@ -7,13 +7,15 @@ public class BarricadeScript : MonoBehaviour
 {
     public GameObject _barricade;
     public GameObject _barricadeMessage;
-
-    private bool isBuild = false;
+    public GameObject[] _barricadePlank;
 
     private int _barricadeCurrentHP;
-    private int _barricadeMaxHP = 10000;
+    public int _barricadeMaxHP = 40000;
+    public float _buildCooldown = 15f;
+    
     
     private bool coroutineStarted;
+    private bool isBuild = false;
 
     private void Start()
     {
@@ -29,6 +31,18 @@ public class BarricadeScript : MonoBehaviour
             _barricade.SetActive(false);
             isBuild = false;
         }
+        if (_barricade.activeSelf && _barricadeCurrentHP <= (_barricadeMaxHP/4)*3)
+        {
+            _barricadePlank[3].SetActive(false);
+        }
+        if (_barricade.activeSelf && _barricadeCurrentHP <= (_barricadeMaxHP/2))
+        {
+            _barricadePlank[2].SetActive(false);
+        }
+        if (_barricade.activeSelf && _barricadeCurrentHP <= _barricadeMaxHP/4)
+        {
+            _barricadePlank[1].SetActive(false);
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -39,6 +53,11 @@ public class BarricadeScript : MonoBehaviour
             _barricade.SetActive(true);
             _barricadeMessage.SetActive(false);
             isBuild = true;
+
+            for (int i = 0; i < 4; i++)
+            {
+                _barricadePlank[i].SetActive(true);
+            }
         }
         
         if (other.gameObject.tag == "Cube" && isBuild)
@@ -68,6 +87,11 @@ public class BarricadeScript : MonoBehaviour
             _enemyAttack.StopBarricadeAttack();
             StopCoroutine(BarricadeDamge());
         }
+    }
+
+    private void IsBuildOff()
+    {
+        isBuild = false;
     }
 
     private IEnumerator BarricadeDamge()
