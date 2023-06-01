@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cube
   - Shooting
+  - Barricade
   layers:
   - Default
   - TransparentFX
