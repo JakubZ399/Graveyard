@@ -29,7 +29,7 @@ public class BarricadeScript : MonoBehaviour
         if (_barricadeCurrentHP <= 0)
         {
             _barricade.SetActive(false);
-            isBuild = false;
+            Invoke("IsBuildOff", _buildCooldown);
         }
         if (_barricade.activeSelf && _barricadeCurrentHP <= (_barricadeMaxHP/4)*3)
         {
