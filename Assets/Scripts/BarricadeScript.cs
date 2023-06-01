@@ -16,6 +16,7 @@ public class BarricadeScript : MonoBehaviour
     
     private bool coroutineStarted;
     private bool isBuild = false;
+    private bool isInTrigger = false;
 
     private void Start()
     {
@@ -43,11 +44,8 @@ public class BarricadeScript : MonoBehaviour
         {
             _barricadePlank[1].SetActive(false);
         }
-    }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (Input.GetKeyDown(KeyCode.E) && !isBuild && other.gameObject.tag == "Player")
+        if (Input.GetKeyDown(KeyCode.E) && !isBuild && isInTrigger)
         {
             _barricadeCurrentHP = _barricadeMaxHP;
             _barricade.SetActive(true);
@@ -59,7 +57,10 @@ public class BarricadeScript : MonoBehaviour
                 _barricadePlank[i].SetActive(true);
             }
         }
-        
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
         if (other.gameObject.tag == "Cube" && isBuild)
         {
             EnemyAttack _enemyAttack;
@@ -71,6 +72,9 @@ public class BarricadeScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        isInTrigger = true;
+        Debug.Log(isInTrigger);
+
         if (!isBuild && other.gameObject.tag == "Player")
         {
             _barricadeMessage.SetActive(true);
@@ -79,6 +83,9 @@ public class BarricadeScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        isInTrigger = false;
+        Debug.Log(isInTrigger);
+
         _barricadeMessage.SetActive(false);
         if (other.gameObject.tag == "Cube" && !isBuild)
         {
