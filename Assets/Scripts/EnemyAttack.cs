@@ -11,6 +11,8 @@ public class EnemyAttack : MonoBehaviour
     public float enemyAttackRange = 1f;
     public float enemyAttackSpeed = 2f;
 
+    public ZombieData zombieData;
+    
     public static int enemyDamageStatic;
     public static float enemyAttackSpeedStatic;
     
