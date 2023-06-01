@@ -15,7 +15,6 @@ public class HealthSystem : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(currentPlayerHealthStatic);
         SetMaxPlayerHealth();
         RestartLevelAfterDead();
     }

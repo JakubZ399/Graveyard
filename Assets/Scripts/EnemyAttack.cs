@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
@@ -9,6 +10,9 @@ public class EnemyAttack : MonoBehaviour
     
     public float enemyAttackRange = 1f;
     public float enemyAttackSpeed = 2f;
+
+    public static int enemyDamageStatic;
+    public static float enemyAttackSpeedStatic;
     
     public bool coroutineStarted;
 
@@ -16,6 +20,8 @@ public class EnemyAttack : MonoBehaviour
 
     private void Start()
     {
+        enemyDamageStatic = enemyDamage;
+        enemyAttackSpeedStatic = enemyAttackSpeed;
         animator = GetComponent<Animator>();
     }
 
@@ -24,31 +30,40 @@ public class EnemyAttack : MonoBehaviour
         float distance = Vector3.Distance(gameObject.transform.position, EnemyPathfinding.playerObj.transform.position);
         if (distance < enemyAttackRange && coroutineStarted == false)
         {
-            animator.SetBool("isAttacking", true);
-            StartCoroutine(AttackOverTime());
+            StartPlayerAttack();
         }
         else
         {
             return;
         }
-
-        if (distance < enemyAttackRange)
-        {
-            Debug.DrawRay(transform.position, Vector3.forward, Color.red, 1000f);
-        }
     }
 
-    private IEnumerator AttackOverTime()
+    private void StartPlayerAttack()
+    {
+        animator.SetBool("isAttacking", true);
+        StartCoroutine(AttackPlayerOverTime());
+    }
+    
+    public void StartBarricadeAttack()
+    {
+        animator.SetBool("isAttackingBarricade", true);
+    }
+    
+    public void StopBarricadeAttack()
+    {
+        animator.SetBool("isAttackingBarricade", false);
+    }
+
+    private IEnumerator AttackPlayerOverTime()
     {
         coroutineStarted = true;
         while (true)
         {
-            Debug.Log(coroutineStarted);
             yield return new WaitForSeconds(enemyAttackSpeed);
             animator.SetBool("isAttacking", false);
+            GunShoot._playerCameraStatic.DOShakeRotation(0.2f, 10f, 1, 90f);
             HealthSystem.currentPlayerHealthStatic -= enemyDamage;
             coroutineStarted = false;
-            Debug.Log(coroutineStarted);
             yield break;
         }
     }
