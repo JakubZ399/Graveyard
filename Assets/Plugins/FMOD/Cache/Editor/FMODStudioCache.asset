@@ -44,7 +44,11 @@ MonoBehaviour:
     Data3: -438921077
     Data4: 530377412
   Banks:
+<<<<<<< HEAD
   - {fileID: -6890182581594046686}
+=======
+  - {fileID: 6729480619619705858}
+>>>>>>> Julia
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -53,7 +57,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+<<<<<<< HEAD
 --- !u!114 &-8218260232008925368
+=======
+--- !u!114 &-8093200160637073820
+>>>>>>> Julia
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,6 +71,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+<<<<<<< HEAD
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
   Path: Assets/Sandbox/Final Game Project/FMOD/Build/Desktop/Master.strings.bank
@@ -72,6 +81,17 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1142
+=======
+  m_Name: bank:/Bank A.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sandbox/Final Game Project/FMOD/Build/Desktop/Bank A.bank
+  Name: Bank A
+  StudioPath: bank:/Audio/Bank A
+  lastModified: 638212300450138974
+  FileSizes:
+  - Name: Desktop
+    Value: 2592320
+>>>>>>> Julia
   Exists: 1
 --- !u!114 &-7468952697527367569
 MonoBehaviour:
@@ -92,7 +112,11 @@ MonoBehaviour:
     Data3: 1184537226
     Data4: 889634887
   Banks:
+<<<<<<< HEAD
   - {fileID: -6890182581594046686}
+=======
+  - {fileID: 6729480619619705858}
+>>>>>>> Julia
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -165,7 +189,11 @@ MonoBehaviour:
     Data3: -1496510021
     Data4: 1564530634
   Banks:
+<<<<<<< HEAD
   - {fileID: -6890182581594046686}
+=======
+  - {fileID: 6729480619619705858}
+>>>>>>> Julia
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -212,9 +240,15 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+<<<<<<< HEAD
   - {fileID: 2901682277642328234}
   - {fileID: -6890182581594046686}
   - {fileID: -8218260232008925368}
+=======
+  - {fileID: 6260197622786197275}
+  - {fileID: -8093200160637073820}
+  - {fileID: 6729480619619705858}
+>>>>>>> Julia
   EditorEvents:
   - {fileID: -9099819916704244022}
   - {fileID: 4745657404550791803}
@@ -224,6 +258,7 @@ MonoBehaviour:
   - {fileID: -4834794105388611632}
   EditorParameters: []
   MasterBanks:
+<<<<<<< HEAD
   - {fileID: -6890182581594046686}
   StringsBanks:
   - {fileID: 8811109790813528689}
@@ -233,6 +268,12 @@ MonoBehaviour:
   - {fileID: -8218260232008925368}
   cacheTime: 638212309184801349
 >>>>>>> Michalina
+=======
+  - {fileID: 6729480619619705858}
+  StringsBanks:
+  - {fileID: 6260197622786197275}
+  cacheTime: 638212300450328466
+>>>>>>> Julia
   cacheVersion: 131603
 --- !u!114 &2426108621377417285
 MonoBehaviour:
@@ -323,7 +364,11 @@ MonoBehaviour:
     Data3: 2124903601
     Data4: 1051147837
   Banks:
+<<<<<<< HEAD
   - {fileID: 2901682277642328234}
+=======
+  - {fileID: -8093200160637073820}
+>>>>>>> Julia
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -332,7 +377,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &5242593116237940120
+--- !u!114 &6260197622786197275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: Assets/FMOD Project/graveyard sounds fmod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638212315826010061
+=======
+  Path: Assets/Sandbox/Final Game Project/FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638212300450069162
+>>>>>>> Julia
+  FileSizes:
+  - Name: Desktop
+    Value: 1142
+  Exists: 1
+--- !u!114 &6729480619619705858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -344,33 +416,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD Project/graveyard sounds fmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638212315826010061
-  FileSizes:
-  - Name: Desktop
-    Value: 3865088
-  Exists: 1
---- !u!114 &5707587807375713776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank A.bank
-  m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: Assets/FMOD Project/graveyard sounds fmod/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Audio/Bank A
   lastModified: 638212315825778464
+=======
+  Path: Assets/Sandbox/Final Game Project/FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638212300450328466
+>>>>>>> Julia
   FileSizes:
   - Name: Desktop
-    Value: 2592320
+    Value: 3865088
   Exists: 1
 --- !u!114 &7311544637181114404
 MonoBehaviour:
@@ -416,7 +475,11 @@ MonoBehaviour:
     Data3: 756575368
     Data4: -980357479
   Banks:
+<<<<<<< HEAD
   - {fileID: -6890182581594046686}
+=======
+  - {fileID: 6729480619619705858}
+>>>>>>> Julia
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -425,6 +488,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+<<<<<<< HEAD
 --- !u!114 &8811109790813528689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,6 +509,8 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1142
   Exists: 1
+=======
+>>>>>>> Julia
 --- !u!114 &9040641864050861630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,7 +530,11 @@ MonoBehaviour:
     Data3: 117869976
     Data4: -1358299817
   Banks:
+<<<<<<< HEAD
   - {fileID: -6890182581594046686}
+=======
+  - {fileID: 6729480619619705858}
+>>>>>>> Julia
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
