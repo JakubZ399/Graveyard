@@ -12,18 +12,21 @@ EditorBuildSettings:
     path: Assets/Sandbox/Kuba/Kuba_Sandbox_Scene.unity
     guid: 270ee5106722d0a4caffb19003d17088
   - enabled: 1
-    path: Assets/Sandbox/Michalina/Main_Menu.unity
+    path: Assets/Sandbox/Final Game Project/Scenes/Main_Menu.unity
     guid: 59abc85a37d766241a7f43517fb4e708
   - enabled: 1
-    path: Assets/Sandbox/Michalina/Creators_Scene.unity
+    path: Assets/Sandbox/Final Game Project/Scenes/Creators_Scene.unity
     guid: daace258fdd38894786f832c15fb3437
   - enabled: 1
-    path: Assets/Sandbox/Michalina/Options.unity
+    path: Assets/Sandbox/Final Game Project/Scenes/Options.unity
     guid: 0aff0022081a06447a384d7cea6fb8d4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sandbox/Sandbox/MainMap.unity
     guid: 2e444744dd86c4745a365174d3b0ae99
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sandbox/Sandbox/SandboxMap.unity
     guid: 88c8c56db89ed9744be9f533c8265012
+  - enabled: 1
+    path: Assets/Sandbox/Final Game Project/Scenes/Main_Scene.unity
+    guid: 6c1e665eeb4093e4ba564a7443417121
   m_configObjects: {}

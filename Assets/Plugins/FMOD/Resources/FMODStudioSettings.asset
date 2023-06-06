@@ -225,8 +225,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/FMOD Project/graveyard sounds fmod/graveyard sounds.fspro
-  sourceBankPath: Assets/FMOD Project/graveyard sounds fmod/Build
+  sourceProjectPath: Assets/Sandbox/Final Game Project/FMOD/graveyard sounds.fspro
+  sourceBankPath: Assets/Sandbox/Final Game Project/FMOD/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
