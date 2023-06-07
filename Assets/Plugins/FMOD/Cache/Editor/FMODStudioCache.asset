@@ -1,87 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9184136724605859535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/BackgroundMusic/Background
-  m_EditorClassIdentifier: 
-  Name: Background
-  StudioPath: 
-  Min: 0
-  Max: 0
-  Default: 0
-  ID:
-    data1: 1289272834
-    data2: 2524242810
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Value A
-  Exists: 1
---- !u!114 &-9099819916704244022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Footsteps
-  Guid:
-    Data1: 1179894237
-    Data2: 1236315545
-    Data3: -438921077
-    Data4: 530377412
-  Banks:
-  - {fileID: -6507631604494234985}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 3665985364110554967}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-7468952697527367569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Zombie Audio
-  m_EditorClassIdentifier: 
-  Path: event:/Zombie Audio
-  Guid:
-    Data1: 122683866
-    Data2: 1079423299
-    Data3: 1184537226
-    Data4: 889634887
-  Banks:
-  - {fileID: -6507631604494234985}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7311544637181114404}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10000
---- !u!114 &-6507631604494234985
+--- !u!114 &-7064568684749941504
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,17 +10,70 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Bank A.bank
   m_EditorClassIdentifier: 
-  Path: ../sounds/renders/graveyard sounds fmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638211303428227781
+  Path: Assets/Sandbox/Final Game Project/FMOD/Build/Desktop/Bank A.bank
+  Name: Bank A
+  StudioPath: bank:/Audio/Bank A
+  lastModified: 638216969240441298
   FileSizes:
   - Name: Desktop
-    Value: 3856352
+    Value: 2592288
   Exists: 1
---- !u!114 &-4722923598381208436
+--- !u!114 &-6309453731817607750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GunShot
+  m_EditorClassIdentifier: 
+  Path: event:/GunShot
+  Guid:
+    Data1: -521685385
+    Data2: 1246774057
+    Data3: -1496510021
+    Data4: 1564530634
+  Banks:
+  - {fileID: 875910276666865864}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1882103389698610305}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1882103389698610305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GunShot/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 0
+  Default: 0
+  ID:
+    data1: 1794146077
+    data2: 4090462974
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
+  Exists: 1
+--- !u!114 &-627196197099874274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,7 +98,7 @@ MonoBehaviour:
   Labels:
   - Value A
   Exists: 1
---- !u!114 &-488822245387771487
+--- !u!114 &-195401657697011037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,16 +107,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank A.bank
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BackgroundMusic/Background
   m_EditorClassIdentifier: 
-  Path: ../sounds/renders/graveyard sounds fmod/Build/Desktop/Bank A.bank
-  Name: Bank A
-  StudioPath: bank:/Audio/Bank A
-  lastModified: 638211303428544269
-  FileSizes:
-  - Name: Desktop
-    Value: 2592320
+  Name: Background
+  StudioPath: 
+  Min: 0
+  Max: 0
+  Default: 0
+  ID:
+    data1: 1289272834
+    data2: 2524242810
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -159,22 +136,72 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 9155396679798359046}
-  - {fileID: -6507631604494234985}
-  - {fileID: -488822245387771487}
+  - {fileID: 3950098667535796163}
+  - {fileID: -7064568684749941504}
+  - {fileID: 875910276666865864}
   EditorEvents:
-  - {fileID: -9099819916704244022}
-  - {fileID: 4745657404550791803}
-  - {fileID: -7468952697527367569}
-  - {fileID: 9040641864050861630}
+  - {fileID: 7195781346574008653}
+  - {fileID: -6309453731817607750}
+  - {fileID: 5049840937209822674}
+  - {fileID: 3118011005466584547}
+  - {fileID: 7755960932087527491}
+  - {fileID: 4516641296403681214}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -6507631604494234985}
+  - {fileID: 875910276666865864}
   StringsBanks:
-  - {fileID: 9155396679798359046}
-  cacheTime: 638211303428544269
+  - {fileID: 3950098667535796163}
+  cacheTime: 638216969240641492
   cacheVersion: 131603
---- !u!114 &3665985364110554967
+--- !u!114 &875910276666865864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sandbox/Final Game Project/FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638216969240641492
+  FileSizes:
+  - Name: Desktop
+    Value: 3865120
+  Exists: 1
+--- !u!114 &3118011005466584547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MainMenu Music
+  m_EditorClassIdentifier: 
+  Path: event:/MainMenu Music
+  Guid:
+    Data1: 4594108
+    Data2: 1180922963
+    Data3: 117869976
+    Data4: -1358299817
+  Banks:
+  - {fileID: 875910276666865864}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -627196197099874274}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3615391613349221208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,7 +226,27 @@ MonoBehaviour:
   Labels:
   - Value A
   Exists: 1
---- !u!114 &4745657404550791803
+--- !u!114 &3950098667535796163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sandbox/Final Game Project/FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638216969240311175
+  FileSizes:
+  - Name: Desktop
+    Value: 1142
+  Exists: 1
+--- !u!114 &4516641296403681214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -209,25 +256,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BackgroundMusic
+  m_Name: event:/Footsteps
   m_EditorClassIdentifier: 
-  Path: event:/BackgroundMusic
+  Path: event:/Footsteps
   Guid:
-    Data1: 1388993846
-    Data2: 1278962862
-    Data3: 2124903601
-    Data4: 1051147837
+    Data1: 1179894237
+    Data2: 1236315545
+    Data3: -438921077
+    Data4: 530377412
   Banks:
-  - {fileID: -488822245387771487}
-  IsStream: 1
+  - {fileID: 875910276666865864}
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters:
-  - {fileID: -9184136724605859535}
+  - {fileID: 3615391613349221208}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &7311544637181114404
+--- !u!114 &4607059892513737825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,7 +299,7 @@ MonoBehaviour:
   Labels:
   - Value A
   Exists: 1
---- !u!114 &9040641864050861630
+--- !u!114 &5049840937209822674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -262,25 +309,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MainMenu Music
+  m_Name: event:/UI Click
   m_EditorClassIdentifier: 
-  Path: event:/MainMenu Music
+  Path: event:/UI Click
   Guid:
-    Data1: 4594108
-    Data2: 1180922963
-    Data3: 117869976
-    Data4: -1358299817
+    Data1: -985448834
+    Data2: 1212529078
+    Data3: 756575368
+    Data4: -980357479
   Banks:
-  - {fileID: -6507631604494234985}
-  IsStream: 1
+  - {fileID: 875910276666865864}
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters:
-  - {fileID: -4722923598381208436}
+  - {fileID: 8555996627236874980}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &9155396679798359046
+--- !u!114 &7195781346574008653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -289,14 +336,75 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BackgroundMusic
   m_EditorClassIdentifier: 
-  Path: ../sounds/renders/graveyard sounds fmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638211303428238019
-  FileSizes:
-  - Name: Desktop
-    Value: 1066
+  Path: event:/BackgroundMusic
+  Guid:
+    Data1: 1388993846
+    Data2: 1278962862
+    Data3: 2124903601
+    Data4: 1051147837
+  Banks:
+  - {fileID: -7064568684749941504}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -195401657697011037}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7755960932087527491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Zombie Audio
+  m_EditorClassIdentifier: 
+  Path: event:/Zombie Audio
+  Guid:
+    Data1: 122683866
+    Data2: 1079423299
+    Data3: 1184537226
+    Data4: 889634887
+  Banks:
+  - {fileID: 875910276666865864}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4607059892513737825}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
+--- !u!114 &8555996627236874980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/UI Click/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 0
+  Default: 0
+  ID:
+    data1: 1794146077
+    data2: 4090462974
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
   Exists: 1
