@@ -83,12 +83,14 @@ public class GunShoot : MonoBehaviour
         {
             _buzzEffect.SetActive(false);
         }
-        Reloading();
-
+        
         if (_currentAmmo <= 0)
         {
             reloadText.SetActive(true);
+            _buzzEffect.SetActive(false);
         }
+        
+        Reloading();
 
     }
 
@@ -109,6 +111,5 @@ public class GunShoot : MonoBehaviour
         reloadText.SetActive(false);
         Debug.Log("Reloaded");
         isReloading = false;
-        yield break;
     }
 }
