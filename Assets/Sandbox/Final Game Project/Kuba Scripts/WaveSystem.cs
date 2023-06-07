@@ -35,6 +35,7 @@ public class WaveSystem : MonoBehaviour
     
     private void Start()
     {
+        //get respawnpoints position for array
         for (int i = 0; i <= respawnPoint.Length - 1; i++)
         {
             respawnPointPos[i] = respawnPoint[i].position;
@@ -51,11 +52,6 @@ public class WaveSystem : MonoBehaviour
     {
         for (int i = 0; i <= respawnPoint.Length - 1; i++)
         {
-            /*for (int x = Random.Range(1, enemyQuantity-1); x < enemyQuantity; x++)
-            {
-                Instantiate(enemyPrefab,respawnPointPos[i], Quaternion.identity);
-            }*/
-
             StartCoroutine(DelayEnemySpawn(i, enemyQuantity));
         }
     }
@@ -64,23 +60,26 @@ public class WaveSystem : MonoBehaviour
     {
         timerValue = Mathf.FloorToInt(Timer.timeValueStatic);
         
-        //110
         if (timerValue == firstWaveTimer && !isFristWave)
         {
             SpawnEnemy(firstWave);
             isFristWave = true;
+
+            HealthSystem.currentPlayerHealthStatic = 100;
         }
-        //60
         else if (timerValue == secondWaveTimer && !isSecondWave)
         {
             SpawnEnemy(secondWave);
             isSecondWave = true;
+
+            HealthSystem.currentPlayerHealthStatic = 100;
         }
-        //30
         else if (timerValue == thirdWaveTimer && !isThirdWave)
         {
             SpawnEnemy(thirdWave);
             isThirdWave = true;
+
+            HealthSystem.currentPlayerHealthStatic = 100;
         }
     }
 
