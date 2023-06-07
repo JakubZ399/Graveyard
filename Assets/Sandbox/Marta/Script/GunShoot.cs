@@ -33,6 +33,7 @@ public class GunShoot : MonoBehaviour
     //bool
     private bool isReloading;
 
+    public GameObject reloadText;
     private void Awake()
     {
         _buzzEffect.SetActive(false);
@@ -85,6 +86,11 @@ public class GunShoot : MonoBehaviour
         }
         Reloading();
 
+        if (_currentAmmo <= 0)
+        {
+            reloadText.SetActive(true);
+        }
+
     }
 
     private void Reloading()
@@ -102,6 +108,7 @@ public class GunShoot : MonoBehaviour
     private IEnumerator ReloadingCooldown()
     {
         yield return new WaitForSeconds(_reloadingTime);
+        reloadText.SetActive(false);
         Debug.Log("Reloaded");
         isReloading = false;
         yield break;

@@ -134,7 +134,7 @@ MonoBehaviour:
   - {fileID: 5051648748621800441}
   - {fileID: 1426465255589127906}
   _barricadeMaxHP: 40000
-  _buildCooldown: 10
+  _buildCooldown: 35
 --- !u!1 &4001056454386490835
 GameObject:
   m_ObjectHideFlags: 0

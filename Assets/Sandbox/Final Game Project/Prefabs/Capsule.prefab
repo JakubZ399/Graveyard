@@ -237,8 +237,8 @@ Transform:
   m_GameObject: {fileID: 7201033054269058804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7201033054184652520}
   - {fileID: 7201033053679304942}
@@ -355,7 +355,7 @@ MonoBehaviour:
   mouseSmoothTime: 0.03
   cursorLock: 1
   mouseSensitivity: 3.5
-  Speed: 6
+  Speed: 8
   moveSmoothTime: 0.3
   gravity: -30
   groundCheck: {fileID: 7201033054184652520}
@@ -669,6 +669,7 @@ MonoBehaviour:
   recoilStrength: 1
   _playerCamera: {fileID: 7201033053679304943}
   _buzzEffect: {fileID: 4004923915676961492}
+  reloadText: {fileID: 0}
 --- !u!1001 &7201033052283536007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -877,6 +878,7 @@ MonoBehaviour:
   recoilStrength: 1
   _playerCamera: {fileID: 7201033053679304943}
   _buzzEffect: {fileID: 0}
+  reloadText: {fileID: 0}
 --- !u!1001 &7201033053613704769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1005,6 +1007,7 @@ MonoBehaviour:
   recoilStrength: 1
   _playerCamera: {fileID: 7201033053679304943}
   _buzzEffect: {fileID: 0}
+  reloadText: {fileID: 0}
 --- !u!1001 &7201033053771377765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1133,3 +1136,4 @@ MonoBehaviour:
   recoilStrength: 1
   _playerCamera: {fileID: 7201033053679304943}
   _buzzEffect: {fileID: 0}
+  reloadText: {fileID: 0}
