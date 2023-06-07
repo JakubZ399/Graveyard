@@ -16,7 +16,6 @@ public class GunShoot : MonoBehaviour
     public float currentFireCooldown;
 
     //ammo
-    public int _maxCarryingAmmo = 150;
     public int _maxAmmo = 30;
     public float _reloadingTime = 3f;
 
@@ -100,7 +99,6 @@ public class GunShoot : MonoBehaviour
             Debug.Log("Reloading");
             isReloading = true;
             _currentAmmo = _maxAmmo;
-            _maxCarryingAmmo -= _maxAmmo;
             StartCoroutine(ReloadingCooldown());
         }
     }
